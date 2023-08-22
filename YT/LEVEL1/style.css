@@ -1,0 +1,37 @@
+ *
+ {
+    color: #ff00ff;
+ }
+    #Heading1 
+{
+color: chartreuse;
+text-align: center;
+text-decoration: underline;
+}
+ #Heading2
+ {
+    color: #ffffff;
+ }
+ #Heading3
+ {
+    color: chocolate;
+ }
+  p
+ {
+    color: yellow;
+    text-align: center;
+    text-decoration:  red line-through;
+ }
+button{
+    color: blue;
+    background-color : #ffffff;
+
+}
+body{
+   background-color: black;
+}
+
+a{
+   
+   color: aliceblue;
+}

@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;/*Change the scroll to smooth to make it good*/
+}
+
+header{
+    background-color:#f0f0f0;
+    width:100%;
+    position:fixed;/*to make navbar fixed when scroll*/
+    z-index:1000; /*to make navbar fixed too &nothing cover it لو عملت اسكرول مفيش حاجه بتغطي عليه فلازم اديها قيمه عاليه*/
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 200px;    
+}
+
+.logo{
+    font-size: 1.8em; /*1.8 *16 */
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*color:#17c272;*/
+    color:rgb(17, 14, 14);
+}
+.logo span{
+    color:#7d4cf0;
+}
+.nav a{
+    text-decoration: none;
+    /*color:#17c272;*/
+    color:black;
+    font-weight:700 ;
+    padding:30px;
+}
+.nav a:hover{
+    /*color:#601cfc;*/
+    color:#ae9deb;
+}
+/***********/
+section{
+    padding:100px 200px;
+}
+.main{
+    width:100%;
+    min-height:100vh; /*vh:viewheight*/
+    display:flex;
+    align-items:center; 
+    background:url(../img/home.png);
+    background-repeat: no-repeat;
+    background-position:right bottom;
+    background-size:contain;
+}
+
+.main h2{
+    font-size:19px;
+}
+.main h2 span{
+    display:inline-block;/*to do a margin*/
+    font-size: 40px;
+    color:#176fc2;
+    font-weight: 900;
+    margin:10px 0;
+}
+.main h4{
+    margin: 10px 0 30px 0;
+    letter-spacing: 1px;
+}
+.main-btn{
+    text-decoration: none;
+    background-color: #4472d4;
+    color:white;
+    padding:18px ;
+    font-weight: 600;
+    border:1px solid #80b4e5;
+    margin-bottom:30px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+}
+.main-btn:hover{
+    background-color: #154361;
+    color:#fff;
+    transform:scale(1.2);   
+    text-shadow: #115164;
+}
+.social-icons{
+    margin:30px 0;
+}
+.social-icons a{
+    color:#502cd3;
+    font-size: 20px;
+    padding-right:30px;
+}
+.social-icons a:hover{
+    font-size: 30px;
+}
+/******/
+.title{
+    display:flex;    /*to make it in center*/
+    align-items: center;    /*to make it in center*/
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap; /*that help me if i wanna increase the number of cards the size or cards don`t effected*/
+}
+.card{
+    background-color: hsl(246, 60%, 64%);
+    color:rgb(233, 233, 233);
+    width:350px;
+    border:1px solid #dad9d9;
+    padding:20px;
+    margin:15px;
+    min-height: 200px;
+    box-shadow:0 5px/*for right*/ 25px/*strength*/ #857ae4;
+    border-radius: 10px;
+    transition: .4s ease;
+    height:50vh;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+.card .icon{
+    font-size: 50px;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+.info h3{
+    margin-bottom:20px;
+    font-size: 23px;
+    margin:10px;
+}
+/*****/
+.projects{
+    background-color:#eceaea;
+}
+.projects .content{
+    margin-top:30px;
+}
+.project-card{
+    background-color:#fff;
+    display:block;
+    justify-content: center;
+    text-align:center;
+    border:1px solid rgb(238, 237, 237);
+    border-radius:20px;
+    overflow:hidden;
+    width:19em;
+    min-height:14em;
+    margin:20px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-img{
+    opacity: 0.7;
+}
+.project-img img{
+    width:100%;
+    height: 300px;
+}
+.project-info{
+    padding:16px;
+}
+.project-title{
+    display:flex;
+    justify-content: space-between;
+    font-weight:800;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.project-title a{
+    text-decoration:none;
+}
+.project-title a:hover{
+    color:hsl(246, 57%, 59%);
+}
+/*****/
+.cards-contact .content .card{
+    height:300px;
+    width:auto;
+}
+.cards-contact .content .info h3{
+    font-weight: bold;
+}
+.cards-contact .content .info p{
+    font-size: 25px;
+    padding:20px;
+}
+/***/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(189, 61%, 68%);
+    color:white;
+    padding:15px 20px 10px 20px;
+    height:auto;
+}
+.footer .footer-para span{
+    font-weight: 900;
+}
+.footer .social-iconss{
+    padding:10px 20px;
+    color:#fff;
+    font-size: 20px;
+}
+
+.footer .social-iconss a{
+    padding:10px 20px;
+    color:#fff;
+    font-size: 20px;
+}
+
+.footer .social-iconss a:hover{
+    color:rgb(223, 222, 222);
+    transition: 0.4s;
+    font-size: 25px;
+}
+
+/*******To edit my website on all devices********/
+@media(max-width=1023){
+    header{
+        padding:12px 20px;
+        height:auto;
+    }
+    .nav a{
+        padding:10px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+    section{
+        padding:20px 40px;
+    }
+    .main h2, .main h3, .main h2 span{
+        font-size: 16px;
+    }
+    .content{
+        flex-direction: column;/*to put all above each others*/
+        align-items: center;
+    }
+    .card{
+        width:270px;
+        padding:10px;
+        margin:9px;
+        height:60vh;
+    }
+    .project-img img{
+        width:80%;
+        height: 200px;
+    }
+}
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main h2, .main h3, .main h2 span{
+        font-size: 12px;
+    }
+    .icon{
+        font-size: 13px;
+    }
+}
+@media (max-width:300px){
+    body{
+        font-size: 8px;
+    }
+    header{
+        padding:8px 8px;
+        height:auto;
+        margin:0;
+    }
+    .main h2, .main h3, .main h2 span{
+        font-size: 8px;
+    }
+    .icon{
+        font-size: 10px;
+    }
+    h2,h3,h4{
+        font-size: 8px;
+    }
+    img{
+        width: 100px;
+    }
+    .main-btn{
+        font-size: 8px;
+        width: 100px;
+    }
+}

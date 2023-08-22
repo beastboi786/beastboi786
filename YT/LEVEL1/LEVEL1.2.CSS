@@ -1,0 +1,28 @@
+h1
+{
+    text-align: center;
+    text-decoration: underline blue;
+    font-weight: bolder;
+}
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}
+#one{
+    text-align: start;
+    font-weight: 250;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#two{
+    text-align: end;
+    text-decoration: double;
+    font-weight: 700;
+    line-height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#three{
+    text-transform: capitalize;
+}
